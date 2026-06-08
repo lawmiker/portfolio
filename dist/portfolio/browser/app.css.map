@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.css"],
+  "sourcesContent": [":host {\r\n  display: block;\r\n\r\n  width: 100%;\r\n  height: 100vh;\r\n\r\n  overflow: hidden;\r\n}\r\n\r\n.page-layer {\r\n  position: absolute;\r\n\r\n  inset: 0;\r\n\r\n  z-index: 20;\r\n\r\n  pointer-events: none;\r\n}\r\n\r\n.page-layer * {\r\n  pointer-events: auto;\r\n}"],
+  "mappings": ";AAAA;AACE,WAAS;AAET,SAAO;AACP,UAAQ;AAER,YAAU;AACZ;AAEA,CAAC;AACC,YAAU;AAEV,SAAO;AAEP,WAAS;AAET,kBAAgB;AAClB;AAEA,CAVC,WAUW;AACV,kBAAgB;AAClB;",
+  "names": []
+}

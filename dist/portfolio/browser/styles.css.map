@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/styles.css"],
+  "sourcesContent": ["@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap');\r\n\r\nhtml,\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n\r\n  width: 100%;\r\n  height: 100%;\r\n\r\n  background: black;\r\n\r\n  overflow: hidden;\r\n  font-family: \"Jura\", sans-serif;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n}"],
+  "mappings": ";;;AAEA;AACA;AACE,UAAQ;AACR,WAAS;AAET,SAAO;AACP,UAAQ;AAER,cAAY;AAEZ,YAAU;AACV,eAAa,MAAM,EAAE;AACvB;AAEA;AACE,cAAY;AACd;",
+  "names": []
+}

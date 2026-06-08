@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/about-component/about-component.css"],
+  "sourcesContent": [".content-page {\r\n  position: absolute;\r\n\r\n  top: 10%;\r\n  left: 10%;\r\n\r\n  width: 70%;\r\n\r\n  padding: 3rem;\r\n\r\n  color: white;\r\n\r\n  border-radius: 18px;\r\n\r\n  background:\r\n    rgba(0,0,0,0.4);\r\n\r\n  backdrop-filter: blur(10px);\r\n\r\n  border:\r\n    1px solid rgba(0,255,255,0.2);\r\n\r\n  box-shadow:\r\n    0 0 20px rgba(0,255,255,0.15);\r\n}"],
+  "mappings": ";AAAA,CAAC;AACC,YAAU;AAEV,OAAK;AACL,QAAM;AAEN,SAAO;AAEP,WAAS;AAET,SAAO;AAEP,iBAAe;AAEf,cACE,KAAK,CAAC,EAAC,CAAC,EAAC,CAAC,EAAC;AAEb,2BAAiB,KAAK;AAAtB,mBAAiB,KAAK;AAEtB,UACE,IAAI,MAAM,KAAK,CAAC,EAAC,GAAG,EAAC,GAAG,EAAC;AAE3B,cACE,EAAE,EAAE,KAAK,KAAK,CAAC,EAAC,GAAG,EAAC,GAAG,EAAC;AAC5B;",
+  "names": []
+}
