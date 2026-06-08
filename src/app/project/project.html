@@ -1,0 +1,59 @@
+<div class="header"><app-back-button></app-back-button></div>
+
+<div class="container-layout">
+
+<div class="left-container">
+  <section class="left-header">
+  <div class="project-name"><h1>{{ project.projectName }}</h1></div>
+  <!-- <div class="software-labels"><p>{{ project.softwareLabels }}</p></div> -->
+  <div class="software-labels">
+  <span
+    class="software-label"
+    *ngFor="let label of project.softwareLabels">
+    {{ label }}
+  </span>
+</div>
+  </section>
+  <div class="project-icon"> <img [src]="getProjectIcon(project)"> </div>
+  <!-- <div class="devs-list"><p>{{ project.devsList }}</p></div> -->
+  <div class="devs-list">
+    <p>Developers:<br></p>
+    <div *ngFor="let dev of project.devsList"> {{ dev }} </div> 
+  </div>
+  <div class="misc"><p>{{ project.misc }}</p></div>
+</div>
+
+<div class="right-container">
+  
+    <div class="slide-header">
+      <button *ngIf="project.slug !== 'flexwear'" class="nbuttonL" (click)="prevSlide()"></button>
+      <div class="feature-name"><p class="name">{{ project.featureSlides[currentSlide].name }}</p></div>
+      <button *ngIf="project.slug !== 'flexwear'"  class="nbuttonR" (click)="nextSlide()"></button>
+    </div>
+    <section class="slide">
+    <div class="description"><p>{{ project.featureSlides[currentSlide].description }}</p></div>
+    <p *ngIf="project.featureSlides[currentSlide].images.length > 1"
+     class="hint">
+    Use arrows below to view more images
+  </p>
+<div class="feature-img-container">
+  <button
+    class="nbuttonL image-nav"
+    *ngIf="currentImage > 0"
+    (click)="prevImage()">
+  </button>
+
+  <div *ngIf="project.featureSlides[currentSlide].images.length > 1" class="feature-img">
+    <img [src]="getFeatureImage()">
+  </div>
+
+  <button
+    class="nbuttonR image-nav"
+    *ngIf="currentImage < project.featureSlides[currentSlide].images.length - 1"
+    (click)="nextImage()">
+  </button>
+</div>
+  </section>
+</div>
+
+</div>

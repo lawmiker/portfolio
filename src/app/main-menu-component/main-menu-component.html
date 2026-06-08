@@ -1,0 +1,26 @@
+<div class="menu-container">
+  <div class="overlay"></div>
+
+  <div class="menu-panel">
+
+    <div class="header">
+    <h1 class="logo">Main Menu</h1>
+    </div>
+
+    <nav>
+      <a
+        *ngFor="let item of navItems; let i = index"
+        [routerLink]="item.link"
+        routerLinkActive="is-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav-link"
+        [class.is-tapped]="tappedIndex === i"
+        (click)="markTapped(i)"
+      >
+        <span class="nav-bg"></span>
+        <span class="nav-bullet"></span>
+        <span class="nav-text">{{ item.label }}</span>
+      </a>
+    </nav>
+  </div>
+</div>
