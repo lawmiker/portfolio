@@ -1,25 +1,78 @@
-.content-page {
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Jura', sans-serif;
+}
+
+.menu-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
   position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+}
 
-  top: 10%;
-  left: 10%;
+.menu-container::before,
+.menu-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 
-  width: 70%;
+.menu-container::after {
+  background: url('/assets/ui/a.svg'), center/cover no-repeat;
+  background-position-x: left;
+  mix-blend-mode: color-burn;
+}
 
-  padding: 3rem;
+.menu-container::before {
+  background: url('/assets/ui/b.svg'), linear-gradient(to right, rgba(255, 255, 255, 0.063)),  center/cover no-repeat;
+  background-position-x: left;
+  mix-blend-mode: color-dodge;
+}
 
-  color: white;
+.menu-panel {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 40px;
+  color: white
+}
 
-  border-radius: 18px;
+@media (max-width: 600px) {
+  .menu-panel {
+    padding-top: 100px;
+    overflow: scroll;
+  }
+}
 
-  background:
-    rgba(0,0,0,0.4);
+app-back-button {
+  position: absolute;
+  left: 10px;
+  z-index: 9999;
+}
 
-  backdrop-filter: blur(10px);
-
-  border:
-    1px solid rgba(0,255,255,0.2);
-
-  box-shadow:
-    0 0 20px rgba(0,255,255,0.15);
+.hint {
+  font-size: 14px;
 }

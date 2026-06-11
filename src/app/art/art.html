@@ -1,1 +1,13 @@
-<p>art works!</p>
+<app-back-button></app-back-button>
+<div class="menu-container">
+  <div class="overlay"></div>
+
+  <div class="menu-panel">
+    <div class="gallery">
+      <img
+        *ngFor="let img of images"
+        [src]="'assets/images/art/' + img"
+        alt="Artwork">
+    </div>
+  </div>
+</div>

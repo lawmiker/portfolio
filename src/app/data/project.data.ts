@@ -12,7 +12,7 @@ export const Basket_Data: ProjectData = {
 
   featureSlides: [
     {
-      name: 'Login und Register',
+      name: 'Login & Register',
       description: 'The app provides a simple and intuitive authentication flow, allowing users to either log in to an existing account or create a new one. An account is required in order to use the app.\nThe registration process enables new users to quickly create an account by entering their personal details and setting up secure login credentials. The registration is designed to be responsive and inform user of invalid input.\n\nIn case entered e-mail has already been bound to an existing account, the user will be redirected to the login page. Returning users can securely log in using their registered email address and password.',
       images: ['1.png', '3.png', 'register.PNG', 'login2.PNG']
     },
@@ -71,7 +71,7 @@ export const HR_Game: ProjectData = {
   softwareLabels: ['Unity', 'C#', 'Polar'],
   projectIcon: 'hr-game.svg',
 
-  devsList: ['Oleksandra Pyrogova', '', 'Advisors:', 'Dr. Anke Reinschlüssel', 'TT.-Prof. Dr. Tiare Feuchtner'],
+  devsList: ['Oleksandra Pyrogova', '', '\nAdvisors:\n', '', 'Dr. Anke Reinschlüssel', 'TT.-Prof. Dr. Tiare Feuchtner'],
   misc: 'Training a Player\'s Heart Rate Self-Regulation using Dynamic Game Experience\nUniversität Konstanz, AG-HCI',
 
   featureSlides: [

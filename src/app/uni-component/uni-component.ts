@@ -13,7 +13,7 @@ import { BackButton } from '../../assets/shared/back-button/back-button';
 export class UniComponent {
   navItems = [
     { label: 'Picnic Basket', link: '/project/picnic-basket' },
-    { label: 'Heart Rate Game', link: '/project/hr-game' },
+    { label: 'HR Game', link: '/project/hr-game' },
     { label: 'Flexwear', link: '/project/flexwear' },
   ];
   

@@ -11,7 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class MainMenuComponent {
   navItems = [
     { label: 'About', link: '/about' },
-    { label: 'University Projects', link: '/uni-projects' },
+    { label: 'Uni Projects', link: '/uni-projects' },
     { label: '2D and 3D Art', link: '/art' },
   ];
 
