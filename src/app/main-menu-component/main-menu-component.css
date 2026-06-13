@@ -23,6 +23,12 @@
   background: rgba(0, 0, 0, 0.35);
 }
 
+.deco {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+}
+
 .menu-container::before,
 .menu-container::after {
   content: "";
@@ -35,12 +41,14 @@
 
 .menu-container::after {
   background: url('/assets/ui/a.svg'), center/cover no-repeat;
+  background-size: 100% 100%;
   background-position-x: left;
   mix-blend-mode: color-burn;
 }
 
 .menu-container::before {
   background: url('/assets/ui/b.svg'), linear-gradient(to right, rgba(255, 255, 255, 0.063)),  center/cover no-repeat;
+  background-size: 100% 100%;
   background-position-x: left;
   mix-blend-mode: color-dodge;
 }
@@ -57,17 +65,19 @@
 }
 
 .header {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  margin-top: 140px;
-  justify-content: center;
+  margin-top: 150px;
+  margin-left: 50px;
+  align-items: flex-start;
+  width: fit-content;
 }
 
 .logo {
   color: #fff;
   font-size: 60px;
   letter-spacing: 8px;
-  margin-left: 50px;
+  margin: 0;
   text-shadow:
     0 0 10px cyan,
     0 0 30px rgba(0, 255, 255, 0.4);
@@ -170,6 +180,7 @@ nav {
 
 @media (max-width: 600px) {
   .menu-panel {
+    left: -3%;
     width: 100vw;
     z-index: 10;
     display: flex;
