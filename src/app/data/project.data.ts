@@ -78,7 +78,7 @@ export const HR_Game: ProjectData = {
     {
       name: 'Foreword',
       description: 'This project is a heart rate biomechanics-focused game prototype developed as part of a research study exploring heart rate self-regulation in video games.\n\nThe game integrates real-time heart rate monitoring in two different ways:\nContinuous background heart rate tracking and logging for data collection and analysis\nDirect integration of heart rate data into gameplay mechanics\n\nThe core design concept was inspired by research on stress factors and physiological responses, their influence on heart rate and heart rate integration in video games specifically. The game intentionally introduces stressful gameplay situations while encouraging players to maintain a stable heart rate under pressure.',
-      images: ['']
+      images: []
     },
     {
       name: 'Play Modes',
@@ -108,7 +108,7 @@ export const HR_Game: ProjectData = {
     
     {
       name: 'Visuals',
-      description: 'In addition to the gameplay and gameplay-related heart rate data processing implementation, all character illustrations and UI assets were designed and drawn entirely by myself, allowing for a cohesive visual style tailored specifically to the atmosphere and emotional pacing of the game.',
+      description: 'In addition to the gameplay and gameplay-related heart rate data processing implementation, all character illustrations and UI assets were designed and drawn entirely by myself, allowing for a cohesive visual style that fits the atmosphere of the game.',
       images: ['IMG_3772.PNG']
     },
   ]

@@ -24,4 +24,12 @@
       </a>
     </nav>
   </div>
+
+  <div class="bg-info">
+    <span class="bg-text" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" (click)="onTextClick($event)">Background Info</span>
+    <div class="popup" *ngIf="isVisible">
+      <img src="assets/ui/bg-info.svg"/>
+    </div>
+  </div>
+
 </div>

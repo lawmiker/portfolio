@@ -45,7 +45,7 @@
     (click)="prevImage()">
   </button>
 
-  <div *ngIf="project.featureSlides[currentSlide].images.length > 1" class="feature-img">
+  <div *ngIf="project.featureSlides[currentSlide].images.length > 0" class="feature-img">
     <img [src]="getFeatureImage()">
   </div>
 
