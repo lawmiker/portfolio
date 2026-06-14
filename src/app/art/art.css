@@ -9,7 +9,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('/assets/images/1.png');
+  background-image: url('../../assets/images/1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,18 +26,19 @@
   pointer-events: none;
 }
 
-.menu-container::after {
-  background: url('/assets/ui/a.svg'), no-repeat;
-  background-size: cover;
-  background-position-x: left;
-  mix-blend-mode: color-burn;
-}
-
 .menu-container::before {
-  background: url('/assets/ui/b.svg'), linear-gradient(to right, rgba(255, 255, 255, 0.2)), no-repeat;
+  background: url('../../assets/ui/b.svg'), linear-gradient(to right, rgba(255, 255, 255, 0.1)), no-repeat;
   background-size: cover;
   background-position-x: left;
   mix-blend-mode: color-dodge;
+}
+
+.menu-container::after {
+  background: url('../../assets/ui/a.svg'), no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position-x: left;
+  mix-blend-mode: color-burn;
 }
 
 .menu-panel {
@@ -50,6 +51,7 @@
   padding-top: 100px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 100px;
   overflow: scroll;
 }
 
