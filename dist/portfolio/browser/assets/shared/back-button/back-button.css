@@ -1,0 +1,26 @@
+.back-button {
+  margin-top: 50px;
+  background-image: url('/assets/ui/back.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  height: 60px;
+  width: 160px;
+  margin-left: 20px;
+  transform: scale(0.7);
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.back-button:hover,
+.back-button:active {
+  transform: scale(0.8);
+  filter:
+    drop-shadow(0 0 2px cyan)
+    drop-shadow(0 0 4px cyan)
+    drop-shadow(0 0 8px cyan);
+}
