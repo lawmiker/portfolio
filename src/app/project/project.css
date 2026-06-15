@@ -37,6 +37,7 @@
     margin-right: 20px;
     padding: 15px;
     gap: 20px;
+    overflow-y: scroll;
 
     inset: 0;
     background: 
@@ -202,13 +203,13 @@
 }
 
 .feature-name {
+    margin-top: 2px;
     background-image: url('../../assets/ui/featurename.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     align-items: baseline;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .name {
