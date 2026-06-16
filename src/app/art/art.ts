@@ -10,5 +10,5 @@ import { BackButton } from '../../assets/shared/back-button/back-button';
   styleUrl: './art.css',
 })
 export class Art {
-  images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.PNG',];
+  images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.PNG', '6.PNG', '7.jpg'];
 }
